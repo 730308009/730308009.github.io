@@ -1,0 +1,631 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="miaosuwulimi" href="https://730308009.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="miaosuwulimi" href="https://730308009.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="miaosuwulimi" href="https://730308009.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="技术分享" />
+
+
+<link rel="canonical" href="https://730308009.github.io/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html">
+
+
+
+  <title>
+Mac系统安装Aircrack-ng破解附近wifi密码 - mac |
+Yume Shoka = miaosuwulimi = mswlm</title>
+<meta name="generator" content="Hexo 6.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Mac系统安装Aircrack-ng破解附近wifi密码
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2019-12-29 23:22:41">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2019-12-29T23:22:41+08:00">2019-12-29</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/mac/" itemprop="item" rel="index" title="分类于 mac"><span itemprop="name">mac</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://730308009.github.io/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="miaosuwulimi">
+    <meta itemprop="description" content="mswlm, miaosuwulimi博客">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="miaosuwulimi">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="mac系统安装aircrack-ng破解附近wifi密码1"><a class="anchor" href="#mac系统安装aircrack-ng破解附近wifi密码1">#</a> <span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1s">Mac 系统安装 Aircrack-ng 破解附近 wifi 密码 (1)</span></h1>
+<p><strong>阅读目录</strong></p>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDA=">　　第一步， 安装 macport， 安装 Xcode</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDE=">　　第二步， 安装 aircrack-ng</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDI=">　　第三步， 获取当前网卡</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDM=">　　第四步， 获取所有的无线网络</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDQ=">　　第五步，开始抓包 ， 收集监听周围无线网络的数据</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDU=">　　第六步， 查看 cap 文件中的数据是否被抓取到</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDY=">　　第七步， 输入命令 air-crack 开始破解</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDc=">　　WPA/WPA2 简介</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDg=">　　WPA-PSK 安全漏洞</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDk=">　　WPA-PSK 攻击原理</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDEw">　　WPA-PSK 攻击难点</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDEx">　　相关：</span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbDEy">　　参考：</span></li>
+</ul>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第一步-安装macport-安装xcode"><a class="anchor" href="#第一步-安装macport-安装xcode">#</a> 第一步， 安装 macport， 安装 Xcode</h1>
+<p>安装<strong> macport macport</strong> 是一个工具 管理软件包的一个工具， 我们也可以通过别的方式安装<strong> Aircrack-ng</strong>， 但是通过 macport 安装 Aircrack-ng 的速度是最快的， （Mac 系统要求安装 Xcode, 可以参考 macport 的首页）</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第二步-安装aircrack-ng"><a class="anchor" href="#第二步-安装aircrack-ng">#</a> 第二步， 安装 aircrack-ng</h1>
+<p>通过 shell 命令行执行：</p>
+<p>运行下面代码</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo port install aircrack-ng</span><br></pre></td></tr></table></figure></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第三步-获取当前网卡"><a class="anchor" href="#第三步-获取当前网卡">#</a> 第三步， 获取当前网卡</h1>
+<p><strong>通过 ifconfig 命令</strong>获取当前的网卡的名字， 我这边<strong>网卡名字为 en0</strong>：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/efW1XsPpgclUSJj.png" alt="img" /></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第四步-获取所有的无线网络"><a class="anchor" href="#第四步-获取所有的无线网络">#</a> 第四步， 获取所有的无线网络</h1>
+<p>使用<strong> mac</strong> 系统自带的<strong> airport</strong> 工具， 查看当前的无线网络， 以及它们的相关信息，在<strong> shell</strong> 中执行：</p>
+<p>运行下面代码</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s</span><br></pre></td></tr></table></figure></p>
+<p>系统回显如下图， 以下为我附近所有的<strong> wifi</strong>， 注意看表格， <strong>SSID</strong>， <strong>BSSID</strong>， <strong>CHANNEL</strong>，这些关键词都会在后面提到：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/m9yMazRLovHh632.png" alt="img" /></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第五步开始抓包-收集监听周围无线网络的数据"><a class="anchor" href="#第五步开始抓包-收集监听周围无线网络的数据">#</a> 第五步，开始抓包 ， 收集监听周围无线网络的数据</h1>
+<p>参数<strong> en0</strong> 是我电脑的默认网卡， 数字 6 是网卡需要监听的网络频道:</p>
+<p>运行下面代码</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en0 sniff 6</span><br></pre></td></tr></table></figure></p>
+<p>当执行以上命令， 开始监听以后， <strong>wifi</strong> 的图标会<strong>发生改变</strong>， 变成一个小眼睛一样的图标：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/VtedNLoJRfbmvKz.png" alt="img" /></p>
+<p>监听久一点， 然后使用<strong> ctrl+c</strong> 停止监听， 系统会把监听到的数据保存到本地， 如下图， 数据保存到 **/tmp/airportSniffdaMCjH.cap** 文件中：</p>
+<p><img data-src="https://images2015.cnblogs.com/blog/497865/201701/497865-20170108231500300-323707699.png" alt="img" /></p>
+<p>在监听的过程中如果有用户登陆这个 wifi， 那么包就会被我们截获， 如果用户一直没有登陆到这个 wifi， 我们就还要继续等待监听， 尽量在手机或者手提电脑所用高峰期开启捕获， 这样捕获 ** 握手（handshake）** 的几率比较高， 具体原理参考最后的链接；</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第六步-查看cap文件中的数据是否被抓取到"><a class="anchor" href="#第六步-查看cap文件中的数据是否被抓取到">#</a> 第六步， 查看 cap 文件中的数据是否被抓取到</h1>
+<p>输入命令：</p>
+<p>运行下面代码</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo aircrack-ng   /tmp/airportSniff8g0Oex.cap </span><br></pre></td></tr></table></figure></p>
+<p>如果要查询的路由列表的<strong> Encryption</strong> 值为<strong> WPA (1 handshake)</strong> ，说明抓取成功， 否者跳到<strong>第六步</strong>，要重新抓取：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/QkurbE9O3qzpt8N.png" alt="img" /></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="第七步-输入命令air-crack开始破解"><a class="anchor" href="#第七步-输入命令air-crack开始破解">#</a> 第七步， 输入命令 air-crack 开始破解</h1>
+<p>-b 后面的参数 bc:46:99:df:6c:72 指的是网卡的<strong> BSSID</strong>， 最后面的一个文件路径是上一步监听到的数据</p>
+<p>运行下面代码</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo aircrack-ng -w dict.txt -b bc:46:99:df:6c:72 /tmp/airportSniffdaMCjH.cap</span><br></pre></td></tr></table></figure></p>
+<p>只要字典够大， 密码破出来应该指日可待， 字典可以自己去做，或者网上下载</p>
+<p>能不能破解主要看脸， 看运气</p>
+<p>破解成功以后，命令行会显示<strong> KEY FOUND</strong> ：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/2yadkGTCNjK9x7z.png" alt="img" /></p>
+<p>如果觉的自己弄个字典爆破很麻烦， 有些第三方的网站提供免费爆破，或者收费的爆破， <span class="exturl" data-url="aHR0cHM6Ly9ncHVoYXNoLm1lLw==">https://gpuhash.me/</span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="wpawpa2简介"><a class="anchor" href="#wpawpa2简介">#</a> WPA/WPA2 简介</h1>
+<p>由于 WEP 中存在严重的安全漏洞，WIFI 联盟制定了 WPA 和 WPA2 以取代 WEP。其中 WPA 实现了 802.11i 的主要部分，提供了对现有硬件的向下兼容，被用来作为 WEP 到 802.11i 的过渡。之后的则 WPA2 完整的实现了整个 IEEE 802.1i 标准。<br />
+WPA 的根据应用场景的不同采用不同的认证方式，其中面对家庭或小型办公场所网络的 WPA-PSK 不需要专门的认证服务器，所有该网络中的设备通过使用同一个 256-bit 的密钥来进行认证。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="wpa-psk安全漏洞"><a class="anchor" href="#wpa-psk安全漏洞">#</a> WPA-PSK 安全漏洞</h1>
+<p>WPA-PSK 认证中的四次握手被设计用来在不安全的信道中，通过明文传输的方式来进行一定程度上的认证，并且在设备之间建立安全信道。首先，<strong>PSK 会被转化为 PMK</strong>，<strong>而 PMK 则在接下来被用于生成 PTK</strong>。PTK 则会被分为若干部分，<strong>其中一部分被称作 MIC Key</strong>，用来生成每一个包的 Hash 值来用于验证。<br />
+WPA 的安全问题与其认证过程所使用的算法关系不大，更多的是由于这一过程可以被轻易的重现，这就使得 WPA-PSK 可能遭受字典暴力攻击。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="wpa-psk攻击原理"><a class="anchor" href="#wpa-psk攻击原理">#</a> WPA-PSK 攻击原理</h1>
+<p>WPA-PSK 攻击分为以下几个步骤：<br />
+　　1. 根据 passphrase，SSID 生成 PMK，即 PMK = pdkdf2_SHA1 (passphrase, SSID, SSID length, 4096)<br />
+　　2. 捕获 EAPOL 四次握手的数据包，得到 ANonce，SNonce 等信息，用于计算 PTK，即<br />
+　　PTK = PRF-X (PMK, Len (PMK), “Pairwise key expansion”, Min (AA,SA) || Max (AA,SA) || Min (ANonce, SNonce) || Max (ANonce, SNonce))<br />
+　　3. 使用 MIC Key 计算 EAPOL 报文的 MIC，即 MIC = HMAC_MD5 (MIC Key, 16, 802.1x data)<br />
+　　4. 将计算得到的 MIC 值与捕获到的 MIC 值对比，如果相同则破解成功。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="wpa-psk攻击难点"><a class="anchor" href="#wpa-psk攻击难点">#</a> WPA-PSK 攻击难点</h1>
+<p>WPA-PSK 攻击的主要难点在于大量计算 PMK 所需要的计算量。一台普通的计算机通常的计算能力在 500pmks/s，想要对 8 位的纯小写字母组合密码进行暴力破解所需要的时间为 14 年，所以想要破解 WPA－PSK 只有两种可能：1. 用户使用了常见的弱密码；2. 堆砌计算资源，获得超级计算机量级的计算能力。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="相关"><a class="anchor" href="#相关">#</a> 相关：</h1>
+<p>AP (Access Point): 网络接入点，是一种连接无线或有线网络的设备。就是俗称的路由器。</p>
+<p>MAC (Media Access Control Address): 相当于网卡的身份证，MAC 地址本身是不能修改，但是可以通过伪造 MAC 地址欺骗 AP。</p>
+<p>WEP (Wireless Encryption Protocol): 无线加密协议。很早的一种加密协议，容易破解。</p>
+<p>WPA/WPA2 (Wi-FiProtected Access): 基于 WEP 更安全的加密系统。</p>
+<p>Handshake: 握手。</p>
+<p>IV (Initialization Vector) s: 初始化向量。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZGlsaWdlbmNlZGF5L3AvNjM0NDQ4Ny5odG1sI19sYWJlbFRvcA==">回到顶部</span></p>
+<h1 id="参考"><a class="anchor" href="#参考">#</a> 参考：</h1>
+<p>macport：<span class="exturl" data-url="aHR0cHM6Ly93d3cubWFjcG9ydHMub3JnL2luc3RhbGwucGhw">https://www.macports.org/install.php</span></p>
+<p>使用 macbook 破解 WPA/WPA2 wifi 密码：<span class="exturl" data-url="aHR0cDovL3RvcHNwZWVkc25haWwuY29tL21hY2Jvb2stY3JhY2std2lmaS13aXRoLXdwYS13cGEyLw==">http://topspeedsnail.com/macbook-crack-wifi-with-wpa-wpa2/</span></p>
+<p>WEP&amp;WPA Cracking on BT5/MAC 原理：<span class="exturl" data-url="aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3RvbmVsaXVsL2FydGljbGUvZGV0YWlscy84ODM2MjQ4">http://blog.csdn.net/stoneliul/article/details/8836248</span></p>
+<p>第三方的爆破网站：<span class="exturl" data-url="aHR0cHM6Ly9ncHVoYXNoLm1lLw==">https://gpuhash.me/</span> (提供免费的破解， 也提供收费的破解方式， 使用<strong>比特币</strong>作为支付媒介)</p>
+<hr />
+<h1 id="使用macbook破解wpawpa2-wifi密码"><a class="anchor" href="#使用macbook破解wpawpa2-wifi密码">#</a> 使用 macbook 破解 WPA/WPA2 wifi 密码</h1>
+<p>文本仅供学习交流。</p>
+<p>我使用的系统是 macbook air：</p>
+<p><img data-src="!%5Bmacbook%5D(http://topspeedsnail.com/images/2016/4/Screen%20Shot%202016-04-05%20at%2011.26.50.png)" alt="macbook" /></p>
+<h2 id="安装aircrack-ng"><a class="anchor" href="#安装aircrack-ng">#</a> 安装 aircrack-ng</h2>
+<p>使用<span class="exturl" data-url="aHR0cHM6Ly93d3cubWFjcG9ydHMub3JnL2luc3RhbGwucGhw"> macport</span> 安装，命令：</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo port install aircrack-ng</span><br></pre></td></tr></table></figure></p>
+<h2 id="抓包-抓取带密码的握手包"><a class="anchor" href="#抓包-抓取带密码的握手包">#</a> 抓包－抓取带密码的握手包</h2>
+<p>macbook 自带了一个 wifi 工具：airport。</p>
+<p>首先，断开 wifi：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/B4sVfUqX1pAlL6n.png" alt="macbook" /></p>
+<p>查看周围的 wifi：</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s</span><br></pre></td></tr></table></figure></p>
+<p><img data-src="https://i.loli.net/2019/12/29/DVfk3rc4JuZozaT.png" alt="macbook" /></p>
+<p>查看本机的无线网卡设备：</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ifconfig</span><br></pre></td></tr></table></figure></p>
+<p><img data-src="https://i.loli.net/2019/12/29/ROmJGASCztr9jXD.png" alt="macbook" /></p>
+<p><strong>抓包：</strong></p>
+<p>airport 可以使用网卡的监听模式抓取周围的无线网络数据包。其中，对我们最重要的数据包是：包含密码的包－也叫握手包。当有新用户或断开用户自动连接 wifi 时，会发送握手包。有一种攻击方式是 reinjecting packet，它可以强制无线路由器重启，这样当用户自动连接时可以获得握手包。如果无线路由器用户多的话，可以静等（<span class="exturl" data-url="aHR0cDovL3RvcHNwZWVkc25haWwuY29tL2thbGktbGludXgtY3JhY2std2lmaS13cGEv">Kali Linux 使用 Aircrack 破解 wifi 密码 (wpa/wpa2)</span>）。</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en0 sniff 6</span><br></pre></td></tr></table></figure></p>
+<p><img data-src="https://i.loli.net/2019/12/29/Z6vIw4rAk5yPNtu.png" alt="macbook" /></p>
+<p>en0 是无线网卡设备；6 是要破解 wifi 的 CHANNEL。</p>
+<p>静等用户连接 wifi，获得握手包。</p>
+<p>抓的包，保存在 /tmp：</p>
+<p><img data-src="http://topspeedsnail.com/images/2016/4/Screen%20Shot%202016-04-05%20at%2014.27.21.png" alt="macbook" /></p>
+<h2 id="破解wifi密码"><a class="anchor" href="#破解wifi密码">#</a> 破解 wifi 密码</h2>
+<p>获得握手包之后，我们还需要破解加密的密码。</p>
+<p>好的密码字典一个，应包含常见的弱密码、手机号、姓名生日组合、各大网站泄露的密码、英语单词等等。如果使用字典破解不了，说明密码还算复杂；暴力穷举更是费时费力。（论复杂密码的重要性）。</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo aircrack-ng -w password.txt -b c8:3a:35:30:3e:c8 /tmp/*.cap</span><br></pre></td></tr></table></figure></p>
+<p>-w：指定字典文件；－b：指定要破解的 wifi BSSID。</p>
+<p>破解过程：</p>
+<p><img data-src="https://i.loli.net/2019/12/29/WF3GToM17HCPYfS.png" alt="macbook" /></p>
+<p><img data-src="https://i.loli.net/2019/12/29/3WwAlXG1YLxmki4.png" alt="macbook" /></p>
+<blockquote>
+<h3 id="我使用的密码字典"><a class="anchor" href="#我使用的密码字典">#</a> 我使用的密码字典：</h3>
+<p><span class="exturl" data-url="aHR0cDovL3Bhbi5iYWlkdS5jb20vcy8xY2x4YUNB">http://pan.baidu.com/s/1clxaCA</span> (全，未压缩 15G)</p>
+<p><span class="exturl" data-url="aHR0cDovL3Bhbi5iYWlkdS5jb20vcy8xbzdNQ2NIaw==">http://pan.baidu.com/s/1o7MCcHk</span> (简，未压缩 680M)</p>
+</blockquote>
+<p>Written on April 5, 2016</p>
+
+      <div class="tags">
+          <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" rel="tag"><i class="ic i-tag"></i> 技术分享</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-06-21 19:32:45" itemprop="dateModified" datetime="2022-06-21T19:32:45+08:00">2022-06-21</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="miaosuwulimi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="miaosuwulimi 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="miaosuwulimi 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>miaosuwulimi <i class="ic i-at"><em>@</em></i>miaosuwulimi
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://730308009.github.io/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html" title="Mac系统安装Aircrack-ng破解附近wifi密码">https://730308009.github.io/Mac系统安装Aircrack-ng破解附近wifi密码(1).html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/%E5%9C%A8Mac%E4%B8%8A%E7%9A%84PHPSTORM%E9%85%8D%E7%BD%AEXDebug%E6%9D%A5%E8%B0%83%E8%AF%95PHP%E7%A8%8B%E5%BA%8F.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="在Mac上的PHPSTORM配置XDebug来调试PHP程序">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> mac</span>
+  <h3>在Mac上的PHPSTORM配置XDebug来调试PHP程序</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/%5B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%5D%E5%88%B6%E4%BD%9C%E5%9F%BA%E4%BA%8EDash%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%96%87%E6%A1%A3%E6%96%B9%E4%BE%BF%E6%90%9C%E7%B4%A2%E6%96%87%E6%A1%A3api%E5%92%8C%E5%86%85%E5%AE%B9.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="工具推荐 制作基于Dash的本地文档方便搜索文档api和内容">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> mac</span>
+  <h3>工具推荐 制作基于Dash的本地文档方便搜索文档api和内容</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%811"><span class="toc-number">1.</span> <span class="toc-text"> Mac 系统安装 Aircrack-ng 破解附近 wifi 密码 (1)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%AE%89%E8%A3%85macport-%E5%AE%89%E8%A3%85xcode"><span class="toc-number">2.</span> <span class="toc-text"> 第一步， 安装 macport， 安装 Xcode</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E5%AE%89%E8%A3%85aircrack-ng"><span class="toc-number">3.</span> <span class="toc-text"> 第二步， 安装 aircrack-ng</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%BD%91%E5%8D%A1"><span class="toc-number">4.</span> <span class="toc-text"> 第三步， 获取当前网卡</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E8%8E%B7%E5%8F%96%E6%89%80%E6%9C%89%E7%9A%84%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-number">5.</span> <span class="toc-text"> 第四步， 获取所有的无线网络</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%E5%BC%80%E5%A7%8B%E6%8A%93%E5%8C%85-%E6%94%B6%E9%9B%86%E7%9B%91%E5%90%AC%E5%91%A8%E5%9B%B4%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-number">6.</span> <span class="toc-text"> 第五步，开始抓包 ， 收集监听周围无线网络的数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5-%E6%9F%A5%E7%9C%8Bcap%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E6%98%AF%E5%90%A6%E8%A2%AB%E6%8A%93%E5%8F%96%E5%88%B0"><span class="toc-number">7.</span> <span class="toc-text"> 第六步， 查看 cap 文件中的数据是否被抓取到</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E6%AD%A5-%E8%BE%93%E5%85%A5%E5%91%BD%E4%BB%A4air-crack%E5%BC%80%E5%A7%8B%E7%A0%B4%E8%A7%A3"><span class="toc-number">8.</span> <span class="toc-text"> 第七步， 输入命令 air-crack 开始破解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wpawpa2%E7%AE%80%E4%BB%8B"><span class="toc-number">9.</span> <span class="toc-text"> WPA&#x2F;WPA2 简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wpa-psk%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E"><span class="toc-number">10.</span> <span class="toc-text"> WPA-PSK 安全漏洞</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wpa-psk%E6%94%BB%E5%87%BB%E5%8E%9F%E7%90%86"><span class="toc-number">11.</span> <span class="toc-text"> WPA-PSK 攻击原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#wpa-psk%E6%94%BB%E5%87%BB%E9%9A%BE%E7%82%B9"><span class="toc-number">12.</span> <span class="toc-text"> WPA-PSK 攻击难点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3"><span class="toc-number">13.</span> <span class="toc-text"> 相关：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">14.</span> <span class="toc-text"> 参考：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8macbook%E7%A0%B4%E8%A7%A3wpawpa2-wifi%E5%AF%86%E7%A0%81"><span class="toc-number">15.</span> <span class="toc-text"> 使用 macbook 破解 WPA&#x2F;WPA2 wifi 密码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85aircrack-ng"><span class="toc-number">15.1.</span> <span class="toc-text"> 安装 aircrack-ng</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%93%E5%8C%85-%E6%8A%93%E5%8F%96%E5%B8%A6%E5%AF%86%E7%A0%81%E7%9A%84%E6%8F%A1%E6%89%8B%E5%8C%85"><span class="toc-number">15.2.</span> <span class="toc-text"> 抓包－抓取带密码的握手包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%B4%E8%A7%A3wifi%E5%AF%86%E7%A0%81"><span class="toc-number">15.3.</span> <span class="toc-text"> 破解 wifi 密码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E4%BD%BF%E7%94%A8%E7%9A%84%E5%AF%86%E7%A0%81%E5%AD%97%E5%85%B8"><span class="toc-number">15.3.1.</span> <span class="toc-text"> 我使用的密码字典：</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/mac%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E6%88%90%E4%B8%BAdmg%E7%9A%84%E6%96%B9%E6%B3%95.html" rel="bookmark" title="mac应用打包成为dmg的方法">mac应用打包成为dmg的方法</a></li><li><a href="/Mac%E6%95%88%E7%8E%87%E7%A5%9E%E5%99%A8Alfred%E8%B0%83%E7%94%A8%E7%BD%91%E6%98%93%E6%9C%89%E9%81%93%E5%BF%AB%E9%80%9F%E7%BF%BB%E8%AF%91.html" rel="bookmark" title="Mac效率神器Alfred调用网易有道快速翻译">Mac效率神器Alfred调用网易有道快速翻译</a></li><li><a href="/Sublime%20Text%20%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96.html" rel="bookmark" title="Sublime Text 中文汉化">Sublime Text 中文汉化</a></li><li><a href="/Sublime%20Text%20%E6%8F%92%E4%BB%B6.html" rel="bookmark" title="Sublime Text 插件">Sublime Text 插件</a></li><li><a href="/Mac%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8BAriaNg%20Native%E9%85%8D%E7%BD%AE.html" rel="bookmark" title="Mac小技巧之AriaNg Native配置">Mac小技巧之AriaNg Native配置</a></li><li><a href="/MAMP%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%8D%E5%8A%A1.html" rel="bookmark" title="MAMP时数据库服务">MAMP时数据库服务</a></li><li><a href="/%E5%9C%A8Mac%E4%B8%8A%E7%9A%84PHPSTORM%E9%85%8D%E7%BD%AEXDebug%E6%9D%A5%E8%B0%83%E8%AF%95PHP%E7%A8%8B%E5%BA%8F.html" rel="bookmark" title="在Mac上的PHPSTORM配置XDebug来调试PHP程序">在Mac上的PHPSTORM配置XDebug来调试PHP程序</a></li><li class="active"><a href="/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html" rel="bookmark" title="Mac系统安装Aircrack-ng破解附近wifi密码">Mac系统安装Aircrack-ng破解附近wifi密码</a></li><li><a href="/%5B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%5D%E5%88%B6%E4%BD%9C%E5%9F%BA%E4%BA%8EDash%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%96%87%E6%A1%A3%E6%96%B9%E4%BE%BF%E6%90%9C%E7%B4%A2%E6%96%87%E6%A1%A3api%E5%92%8C%E5%86%85%E5%AE%B9.html" rel="bookmark" title="工具推荐 制作基于Dash的本地文档方便搜索文档api和内容">工具推荐 制作基于Dash的本地文档方便搜索文档api和内容</a></li><li><a href="/netstat.html" rel="bookmark" title="netstat">netstat</a></li><li><a href="/MacLinux%20%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E7%89%88%20man%20%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4.html" rel="bookmark" title="Mac/Linux 安装中文版 man 帮助命令">Mac/Linux 安装中文版 man 帮助命令</a></li><li><a href="/%E6%9C%80%E6%96%B0%E7%9A%84VS%20Code%20Monokai%20Pro%E6%BF%80%E6%B4%BB%E6%96%B9%E5%BC%8F.html" rel="bookmark" title="最新的VS Code Monokai Pro激活方式">最新的VS Code Monokai Pro激活方式</a></li><li><a href="/Scrcpy%20%E5%AE%89%E5%8D%93%E6%8A%95%E5%B1%8F%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6%20-%20%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84%20Vysor%20%E6%9B%BF%E4%BB%A3%E5%93%81.html" rel="bookmark" title="Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品">Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品</a></li><li><a href="/macport%20vs%20brew.html" rel="bookmark" title="macport vs brew">macport vs brew</a></li><li><a href="/Final%20Cut%20Pro%20%E6%8F%92%E4%BB%B6%E8%BF%87%E6%9C%9F.html" rel="bookmark" title="Final Cut Pro 10.3.4 每次打开都提示 插件过期">Final Cut Pro 10.3.4 每次打开都提示 插件过期</a></li><li><a href="/Mac%20OS%E4%B8%8BApp%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B.html" rel="bookmark" title="Mac OS下App汉化教程">Mac OS下App汉化教程</a></li><li><a href="/%E3%80%8C%E9%A1%B9%E7%9B%AE%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E3%80%8D%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95.html" rel="bookmark" title="「项目已被 macOS 使用，不能打开」的处理办法">「项目已被 macOS 使用，不能打开」的处理办法</a></li><li><a href="/%E4%B8%80%E6%AC%A1%E6%80%A7%20%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98..html" rel="bookmark" title="一次性 解决已被 macOS 使用，不能打开的问题.">一次性 解决已被 macOS 使用，不能打开的问题.</a></li><li><a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" rel="bookmark" title="VS Code漂亮MonoKai Pro主题许可证">VS Code漂亮MonoKai Pro主题许可证</a></li><li><a href="/Firefox%20Private%20Network.html" rel="bookmark" title="Firefox Private Network是火狐9月初重启的项目">Firefox Private Network是火狐9月初重启的项目</a></li><li><a href="/%E9%80%9A%E8%BF%87%20ProxyChains-NG%20%E5%AE%9E%E7%8E%B0%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86.html" rel="bookmark" title="通过 ProxyChains-NG 实现终端代理">通过 ProxyChains-NG 实现终端代理</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="miaosuwulimi"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">miaosuwulimi</p>
+  <div class="description" itemprop="description">miaosuwulimi博客</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">22</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">1</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">1</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/%E5%9C%A8Mac%E4%B8%8A%E7%9A%84PHPSTORM%E9%85%8D%E7%BD%AEXDebug%E6%9D%A5%E8%B0%83%E8%AF%95PHP%E7%A8%8B%E5%BA%8F.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/%5B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%5D%E5%88%B6%E4%BD%9C%E5%9F%BA%E4%BA%8EDash%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%96%87%E6%A1%A3%E6%96%B9%E4%BE%BF%E6%90%9C%E7%B4%A2%E6%96%87%E6%A1%A3api%E5%92%8C%E5%86%85%E5%AE%B9.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/MacLinux%20%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E7%89%88%20man%20%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4.html" title="Mac&#x2F;Linux 安装中文版 man 帮助命令">Mac/Linux 安装中文版 man 帮助命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/%E9%80%9A%E8%BF%87%20ProxyChains-NG%20%E5%AE%9E%E7%8E%B0%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86.html" title="通过 ProxyChains-NG 实现终端代理">通过 ProxyChains-NG 实现终端代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/%E5%9C%A8Mac%E4%B8%8A%E7%9A%84PHPSTORM%E9%85%8D%E7%BD%AEXDebug%E6%9D%A5%E8%B0%83%E8%AF%95PHP%E7%A8%8B%E5%BA%8F.html" title="在Mac上的PHPSTORM配置XDebug来调试PHP程序">在Mac上的PHPSTORM配置XDebug来调试PHP程序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Final%20Cut%20Pro%20%E6%8F%92%E4%BB%B6%E8%BF%87%E6%9C%9F.html" title="Final Cut Pro 10.3.4 每次打开都提示 插件过期">Final Cut Pro 10.3.4 每次打开都提示 插件过期</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html" title="Mac系统安装Aircrack-ng破解附近wifi密码">Mac系统安装Aircrack-ng破解附近wifi密码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/mac%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E6%88%90%E4%B8%BAdmg%E7%9A%84%E6%96%B9%E6%B3%95.html" title="mac应用打包成为dmg的方法">mac应用打包成为dmg的方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Mac%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8BAriaNg%20Native%E9%85%8D%E7%BD%AE.html" title="Mac小技巧之AriaNg Native配置">Mac小技巧之AriaNg Native配置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" title="VS Code漂亮MonoKai Pro主题许可证">VS Code漂亮MonoKai Pro主题许可证</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/%E3%80%8C%E9%A1%B9%E7%9B%AE%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E3%80%8D%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95.html" title="「项目已被 macOS 使用，不能打开」的处理办法">「项目已被 macOS 使用，不能打开」的处理办法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/Mac/hello-world.html" title="Hello World">Hello World</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">miaosuwulimi @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'Mac系统安装Aircrack-ng破解附近wifi密码(1).html',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

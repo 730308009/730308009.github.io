@@ -1,0 +1,546 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="miaosuwulimi" href="https://730308009.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="miaosuwulimi" href="https://730308009.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="miaosuwulimi" href="https://730308009.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="技术分享" />
+
+
+<link rel="canonical" href="https://730308009.github.io/%E4%B8%80%E6%AC%A1%E6%80%A7%20%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98..html">
+
+
+
+  <title>
+一次性 解决已被 macOS 使用，不能打开的问题. - mac |
+Yume Shoka = miaosuwulimi = mswlm</title>
+<meta name="generator" content="Hexo 6.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">一次性 解决已被 macOS 使用，不能打开的问题.
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-02-07 16:42:23">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-02-07T16:42:23+08:00">2020-02-07</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/mac/" itemprop="item" rel="index" title="分类于 mac"><span itemprop="name">mac</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://730308009.github.io/%E4%B8%80%E6%AC%A1%E6%80%A7%20%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98..html">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="miaosuwulimi">
+    <meta itemprop="description" content="mswlm, miaosuwulimi博客">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="miaosuwulimi">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="一次性-解决已被-macos-使用不能打开的问题"><a class="anchor" href="#一次性-解决已被-macos-使用不能打开的问题">#</a> 一次性 解决已被 macOS 使用，不能打开的问题.</h1>
+<p>最近买了一个移动硬盘，但是在 MacBook 中 老是出现 文件被 macOs 使用，不能打开的问题</p>
+<p><img data-src="https://i.loli.net/2020/02/07/5Aq28UbWd3CytuG.png" alt="" /></p>
+<p>通过网络查询到的解决方案 都是通过命令行清除多余的文件属性。来实现。但是我的移动硬盘中上百个文档，经常使用，而且还需要对接 win10 系统进行拷贝文档.<br />
+ 所以:<br />
+1. 修改移动硬盘的存储格式，不靠谱.<br />
+2. 每次编辑命令行不靠谱.<br />
+ 然后想到了 利用 mac 中的自动工具来实现。将命令编辑为脚本。添加到系统菜单中。来快速解决.</p>
+<p>下面是我的操作步骤。如果有更方便的解决方案，或者更好的脚本编写方式，请大神们指点.</p>
+<p>第一步<br />
+创建自动操作</p>
+<p><img data-src="https://i.loli.net/2020/02/07/GJdDFo46EKwLUNV.png" alt="" /></p>
+<p>选择快速操作文件类型</p>
+<p><img data-src="https://i.loli.net/2020/02/07/SBCXDFjRHyWl3pK.png" alt="" /></p>
+<p><img data-src="https://i.loli.net/2020/02/07/R234xCPmvnQtrAj.jpg" alt="" /></p>
+<p>选择工作流程的类型</p>
+<p>第二步:<br />
+ 配置整个自动化流程</p>
+<p>先创建一个请求确认，避免错误点击，造成的无意义操作.</p>
+<p><img data-src="https://i.loli.net/2020/02/07/twKHVz5nDWdFBL2.png" alt="" /></p>
+<p>创建一个确认对话框，文字内容随便输入，这只是我的一个参考.</p>
+<p><img data-src="https://i.loli.net/2020/02/07/rTxD9QBGg7PVAiq.jpg" alt="" />然后添加输入参数。例如选择了文件夹或者文件后，需要将文件地址传递到脚本中来是，所以我们需要添加传参</p>
+<p><img data-src="https://i.loli.net/2020/02/07/JqZWod354VTtlye.png" alt="" /></p>
+<p>选择添加一个路径变量，添加成功后的效果如下</p>
+<p><img data-src="https://i.loli.net/2020/02/07/Mz8FrWDjtBOg3QG.jpg" alt="" /></p>
+<p>到这一步为止，我们的自动化文件路径已经能够传递进来了。下一步我们开始编辑操作脚本</p>
+<p>第三步<br />
+编辑脚本命令</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">read -p &quot;input a val:&quot; INIT_PATH</span><br><span class="line">function read_dir()&#123;</span><br><span class="line">	IFS=$(echo -en &quot;\n\b&quot;)</span><br><span class="line">    for file in ` ls $1 `</span><br><span class="line">    do</span><br><span class="line">        if [ -f $1&quot;/&quot;$file ];</span><br><span class="line">        then</span><br><span class="line">			xattr -c $1&quot;/&quot;$file</span><br><span class="line">        else</span><br><span class="line">			read_dir $1&quot;/&quot;$file</span><br><span class="line">       fi</span><br><span class="line">    done</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if [ -f &quot;$INIT_PATH&quot; ];</span><br><span class="line">then</span><br><span class="line">	xattr -c &quot;$INIT_PATH&quot;</span><br><span class="line">else </span><br><span class="line">	read_dir $INIT_PATH </span><br><span class="line">fi</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>效果如图所示</p>
+<p><img data-src="https://i.loli.net/2020/02/07/IskuB7UpCqKXhS6.jpg" alt="" /></p>
+<p>其实到这一步就可以了。但是如果希望能够有一个完成提示的话可以再添加一个<br />
+完成通知.</p>
+<p><img data-src="" alt="" /></p>
+<p>到现在整个自动操作的功能就编辑完成了:<br />
+ 完整版如下图</p>
+<p><img data-src="https://i.loli.net/2020/02/07/eWpPdV7UXJDKSc8.png" alt="" /></p>
+<p>完成后 可以点击右上角的 运行按钮 进行运行一遍，主要是检查 shell 脚本有没有错误.</p>
+<p>默认操作会是遍历你的桌面路径.</p>
+<p>第四步<br />
+保存自动流程</p>
+<p><img data-src="https://i.loli.net/2020/02/07/BkLNljqvPg4X8EC.png" alt="" /></p>
+<p>点击 存储进行保存操作.</p>
+<p>然后就是干活的时候到了。通过访达 打开你的移动硬盘中的文件，选择被占用的文件，右击 快速操作下面就会出现你刚才添加的 清理 OS 文件占用的选项了。点击就行</p>
+<p><img data-src="https://i.loli.net/2020/02/07/qGKMOQeiCg61ESc.png" alt="" /></p>
+<p>清理完成后 右上角就会弹出提示了</p>
+<p>当前支持<br />
+ 1. 选择单个文件 解除 OS 占用.<br />
+2. 选择文件夹，解除 OS 占用.<br />
+3. 选择磁盘根目录，解决整个磁盘的 OS 占用.(不建议，文件越多，耗时越长.)</p>
+<p>清理的速度根据你的电脑性能，和文件数量来决定.</p>
+
+      <div class="tags">
+          <a href="/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" rel="tag"><i class="ic i-tag"></i> 技术分享</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-06-21 19:32:56" itemprop="dateModified" datetime="2022-06-21T19:32:56+08:00">2022-06-21</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="miaosuwulimi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="miaosuwulimi 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="miaosuwulimi 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>miaosuwulimi <i class="ic i-at"><em>@</em></i>miaosuwulimi
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://730308009.github.io/%E4%B8%80%E6%AC%A1%E6%80%A7%20%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98..html" title="一次性 解决已被 macOS 使用，不能打开的问题.">https://730308009.github.io/一次性 解决已被 macOS 使用，不能打开的问题..html</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/%E3%80%8C%E9%A1%B9%E7%9B%AE%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E3%80%8D%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95.html" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciub8ja1j20zk0m81ky.jpg" title="「项目已被 macOS 使用，不能打开」的处理办法">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> mac</span>
+  <h3>「项目已被 macOS 使用，不能打开」的处理办法</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexw3o58j20zk0m8e81.jpg" title="VS Code漂亮MonoKai Pro主题许可证">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> mac</span>
+  <h3>VS Code漂亮MonoKai Pro主题许可证</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E6%AC%A1%E6%80%A7-%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB-macos-%E4%BD%BF%E7%94%A8%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text"> 一次性 解决已被 macOS 使用，不能打开的问题.</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/mac%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E6%88%90%E4%B8%BAdmg%E7%9A%84%E6%96%B9%E6%B3%95.html" rel="bookmark" title="mac应用打包成为dmg的方法">mac应用打包成为dmg的方法</a></li><li><a href="/Mac%E6%95%88%E7%8E%87%E7%A5%9E%E5%99%A8Alfred%E8%B0%83%E7%94%A8%E7%BD%91%E6%98%93%E6%9C%89%E9%81%93%E5%BF%AB%E9%80%9F%E7%BF%BB%E8%AF%91.html" rel="bookmark" title="Mac效率神器Alfred调用网易有道快速翻译">Mac效率神器Alfred调用网易有道快速翻译</a></li><li><a href="/Sublime%20Text%20%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96.html" rel="bookmark" title="Sublime Text 中文汉化">Sublime Text 中文汉化</a></li><li><a href="/Sublime%20Text%20%E6%8F%92%E4%BB%B6.html" rel="bookmark" title="Sublime Text 插件">Sublime Text 插件</a></li><li><a href="/Mac%E5%B0%8F%E6%8A%80%E5%B7%A7%E4%B9%8BAriaNg%20Native%E9%85%8D%E7%BD%AE.html" rel="bookmark" title="Mac小技巧之AriaNg Native配置">Mac小技巧之AriaNg Native配置</a></li><li><a href="/MAMP%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%8D%E5%8A%A1.html" rel="bookmark" title="MAMP时数据库服务">MAMP时数据库服务</a></li><li><a href="/%E5%9C%A8Mac%E4%B8%8A%E7%9A%84PHPSTORM%E9%85%8D%E7%BD%AEXDebug%E6%9D%A5%E8%B0%83%E8%AF%95PHP%E7%A8%8B%E5%BA%8F.html" rel="bookmark" title="在Mac上的PHPSTORM配置XDebug来调试PHP程序">在Mac上的PHPSTORM配置XDebug来调试PHP程序</a></li><li><a href="/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html" rel="bookmark" title="Mac系统安装Aircrack-ng破解附近wifi密码">Mac系统安装Aircrack-ng破解附近wifi密码</a></li><li><a href="/%5B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%5D%E5%88%B6%E4%BD%9C%E5%9F%BA%E4%BA%8EDash%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%96%87%E6%A1%A3%E6%96%B9%E4%BE%BF%E6%90%9C%E7%B4%A2%E6%96%87%E6%A1%A3api%E5%92%8C%E5%86%85%E5%AE%B9.html" rel="bookmark" title="工具推荐 制作基于Dash的本地文档方便搜索文档api和内容">工具推荐 制作基于Dash的本地文档方便搜索文档api和内容</a></li><li><a href="/netstat.html" rel="bookmark" title="netstat">netstat</a></li><li><a href="/MacLinux%20%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E7%89%88%20man%20%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4.html" rel="bookmark" title="Mac/Linux 安装中文版 man 帮助命令">Mac/Linux 安装中文版 man 帮助命令</a></li><li><a href="/%E6%9C%80%E6%96%B0%E7%9A%84VS%20Code%20Monokai%20Pro%E6%BF%80%E6%B4%BB%E6%96%B9%E5%BC%8F.html" rel="bookmark" title="最新的VS Code Monokai Pro激活方式">最新的VS Code Monokai Pro激活方式</a></li><li><a href="/Scrcpy%20%E5%AE%89%E5%8D%93%E6%8A%95%E5%B1%8F%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6%20-%20%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84%20Vysor%20%E6%9B%BF%E4%BB%A3%E5%93%81.html" rel="bookmark" title="Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品">Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品</a></li><li><a href="/macport%20vs%20brew.html" rel="bookmark" title="macport vs brew">macport vs brew</a></li><li><a href="/Final%20Cut%20Pro%20%E6%8F%92%E4%BB%B6%E8%BF%87%E6%9C%9F.html" rel="bookmark" title="Final Cut Pro 10.3.4 每次打开都提示 插件过期">Final Cut Pro 10.3.4 每次打开都提示 插件过期</a></li><li><a href="/Mac%20OS%E4%B8%8BApp%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B.html" rel="bookmark" title="Mac OS下App汉化教程">Mac OS下App汉化教程</a></li><li><a href="/%E3%80%8C%E9%A1%B9%E7%9B%AE%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E3%80%8D%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95.html" rel="bookmark" title="「项目已被 macOS 使用，不能打开」的处理办法">「项目已被 macOS 使用，不能打开」的处理办法</a></li><li class="active"><a href="/%E4%B8%80%E6%AC%A1%E6%80%A7%20%E8%A7%A3%E5%86%B3%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E7%9A%84%E9%97%AE%E9%A2%98..html" rel="bookmark" title="一次性 解决已被 macOS 使用，不能打开的问题.">一次性 解决已被 macOS 使用，不能打开的问题.</a></li><li><a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" rel="bookmark" title="VS Code漂亮MonoKai Pro主题许可证">VS Code漂亮MonoKai Pro主题许可证</a></li><li><a href="/Firefox%20Private%20Network.html" rel="bookmark" title="Firefox Private Network是火狐9月初重启的项目">Firefox Private Network是火狐9月初重启的项目</a></li><li><a href="/%E9%80%9A%E8%BF%87%20ProxyChains-NG%20%E5%AE%9E%E7%8E%B0%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86.html" rel="bookmark" title="通过 ProxyChains-NG 实现终端代理">通过 ProxyChains-NG 实现终端代理</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="miaosuwulimi"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">miaosuwulimi</p>
+  <div class="description" itemprop="description">miaosuwulimi博客</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">22</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">1</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">1</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/%E3%80%8C%E9%A1%B9%E7%9B%AE%E5%B7%B2%E8%A2%AB%20macOS%20%E4%BD%BF%E7%94%A8%EF%BC%8C%E4%B8%8D%E8%83%BD%E6%89%93%E5%BC%80%E3%80%8D%E7%9A%84%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/VS%20Code%E6%BC%82%E4%BA%AEMonoKai%20Pro%E4%B8%BB%E9%A2%98%E8%AE%B8%E5%8F%AF%E8%AF%81.html" title="VS Code漂亮MonoKai Pro主题许可证">VS Code漂亮MonoKai Pro主题许可证</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/%5B%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90%5D%E5%88%B6%E4%BD%9C%E5%9F%BA%E4%BA%8EDash%E7%9A%84%E6%9C%AC%E5%9C%B0%E6%96%87%E6%A1%A3%E6%96%B9%E4%BE%BF%E6%90%9C%E7%B4%A2%E6%96%87%E6%A1%A3api%E5%92%8C%E5%86%85%E5%AE%B9.html" title="工具推荐 制作基于Dash的本地文档方便搜索文档api和内容">工具推荐 制作基于Dash的本地文档方便搜索文档api和内容</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Mac%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Aircrack-ng%E7%A0%B4%E8%A7%A3%E9%99%84%E8%BF%91wifi%E5%AF%86%E7%A0%81(1).html" title="Mac系统安装Aircrack-ng破解附近wifi密码">Mac系统安装Aircrack-ng破解附近wifi密码</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/%E6%9C%80%E6%96%B0%E7%9A%84VS%20Code%20Monokai%20Pro%E6%BF%80%E6%B4%BB%E6%96%B9%E5%BC%8F.html" title="最新的VS Code Monokai Pro激活方式">最新的VS Code Monokai Pro激活方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/Mac/hello-world.html" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Firefox%20Private%20Network.html" title="Firefox Private Network是火狐9月初重启的项目">Firefox Private Network是火狐9月初重启的项目</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Scrcpy%20%E5%AE%89%E5%8D%93%E6%8A%95%E5%B1%8F%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6%20-%20%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E7%9A%84%20Vysor%20%E6%9B%BF%E4%BB%A3%E5%93%81.html" title="Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品">Scrcpy 安卓投屏控制软件 - 开源免费的 Vysor 替代品</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/MAMP%E6%97%B6%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9C%8D%E5%8A%A1.html" title="MAMP时数据库服务">MAMP时数据库服务</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Final%20Cut%20Pro%20%E6%8F%92%E4%BB%B6%E8%BF%87%E6%9C%9F.html" title="Final Cut Pro 10.3.4 每次打开都提示 插件过期">Final Cut Pro 10.3.4 每次打开都提示 插件过期</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/mac/" title="分类于 mac">mac</a>
+</div>
+
+    <span><a href="/Sublime%20Text%20%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96.html" title="Sublime Text 中文汉化">Sublime Text 中文汉化</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">miaosuwulimi @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '一次性 解决已被 macOS 使用，不能打开的问题..html',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
